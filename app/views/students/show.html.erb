@@ -1,0 +1,13 @@
+
+
+  <h1>  <%= @student.name %> </h1>
+  <p>Student ID: <%= @student.id %> </p>
+  <h3>Address:</h3>
+  <% @student.addresses.each do |address| %>
+  <p> <%= address.street_number %> <%= address.street %> </p>
+  <p><%= address.city %></p>
+  <% end %>
+  <h3>Courses:</h3>
+  <% @student.courses.each do |course| %>
+  <p> <%= course.name %>  </p>
+  <% end %>
